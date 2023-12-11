@@ -3,14 +3,14 @@
   --secondary: #D33F49;
   --light: #fff;
   --dark: #000;
-  --diabled: #e7e7e7;
+  --disabled: #e7e7e7;
 }
 
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   height: 100vh;
-  background-color: var(--diabled);
+  background-color: var(--disabled);
 }
 
 *:first-letter {
@@ -72,7 +72,7 @@ form {
 input {
   border: none;
   padding-left: 10px;
-  background-color: var(--diabled);
+  background-color: var(--disabled);
 }
 
 input:focus {
@@ -90,7 +90,7 @@ input:focus {
   height: 35px;
   border-radius: 50%;
   font-size: 18px;
-  background-color: var(--diabled);
+  background-color: var(--disabled);
 }
 
 .orderButton {
@@ -107,7 +107,7 @@ input:focus {
 }
 
 .done {
-  background-color: var(--diabled);
+  background-color: var(--disabled);
   text-decoration: line-through;
   color: var(--dark);
 }

@@ -1,11 +1,11 @@
 // date info
-const dateNumber = document.getElementById('dateNumer');
+const dateNumber = document.getElementById('dateNumber');
 const dateText = document.getElementById('dateText');
 const dateMonth = document.getElementById('dateMonth');
 const dateYear = document.getElementById('dateYear');
 
 // tasks container
-const tasksContainer = document.createElement('tasksContainer');
+const tasksContainer = document.getElementById('tasksContainer');
 
 const setDate = () => {
   const date = new Date();
@@ -34,6 +34,21 @@ const addNewTask = e => {
 
 const changeTaskState = e => {
   e.target.classList.toggle('done');
+}
+
+const order = e => {
+  const done = [];
+  const toDo = [];
+
+  tasksContainer.childNodes.forEach( node => {
+    node.classList.contains('done') ? done.push(node) : toDo.push(node);
+  })
+
+  return [...toDo, ...done];
+}
+
+const renderOrderedTasks = () => {
+  order().forEach(node => tasksContainer.appendChild(node));
 }
 
 setDate();
