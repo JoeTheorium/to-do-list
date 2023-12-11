@@ -1,2 +1,2 @@
 # TO DO List
-YOOUR LISTT!!
+YOUUR TO-DO LISTT!!
