@@ -32,4 +32,8 @@ const addNewTask = e => {
   e.target.reset();
 }
 
+const changeTaskState = e => {
+  e.target.classList.toggle('done');
+}
+
 setDate();
